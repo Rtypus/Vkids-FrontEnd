@@ -1089,6 +1089,26 @@ PANELS CONFIGURATIONS
 	margin-left: 10px;
 }
 
+.kids{
+    background: url(../img/BG.jpg) no-repeat center top;
+    text-align: center;
+    background-position: center center;
+}
+.kids i {
+    color: white;
+    margin-top: 45px;
+}
+.kids h2 {
+    color: white;
+    font-weight: 900;
+}
+.kids h4 {
+    color: white;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+
 /*WEATHER PANELS*/
 
 /* Weather 1 */
@@ -3355,16 +3375,218 @@ ul.chat-available-user li a:hover {
 
 
 
+.navbar-brand {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
 
+.navbar-inverse .navbar-brand {
+    color: #ddd;
+}
+
+.navbar-inverse {
+    background-color: transparent;
+    border: 0px;
+}
+
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.mt-main {
+    margin-top: 120px;
+}
+
+.mt-row {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#headerwrap {
+    background: url(../img/BG.jpg) no-repeat center top;
+    padding-top: 180px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 700px;
+    width: 100%;
+    color: white;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#headerwrap h1 {
+    font-weight: 100;
+    font-size: 70px;
+}
+
+#headerwrap h2 {
+    color: #ddd;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.btn {
+    margin-right: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-weight: 300;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-transparent:hover {
+    background-color: white;
+    border: 1px solid white;
+    color: #010101;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+}
+
+#gwrap {
+    background-color: #fbfcfe;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #eff0f2;
+    border-bottom: 1px solid #eff0f2;
+    width: 100%;
+}
+
+#gwrap .mac {
+    padding-left: 0px;
+    margin-left: 0px !important;
+}
+
+#blackwrap {
+    background-color: #272729;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 1px solid #eff0f2;
+    width: 100%;
+    color: white;
+}
+
+#blackwrap h2 {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.block {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: black;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.block .fa {
+    color: #f17241;
+   /* font-size: 22px;*/
+}
+
+.block h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.block p {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.subscribe-input {
+
+  font-size: 14px;
+  border-radius:3px;
+  line-height: 24px;
+  padding: 12px 15px;
+  border: none;
+  margin-bottom: 10px;
+  background-color: #e9f0f2;
+    float: left;
+    width: 70%;
+    text-align: left;
+  margin-right: 2%;
+}
+
+.subscribe-submit {
+    position: absolute;
+    right: 0;
+    padding-left: 28px;
+}
+
+@media (max-width: 768px) {
+  .subscribe-input {
+    float: none;
+    width: 100%;
+    text-align: left;
+    margin-right: 0;
+  }
+}
+
+/* Button used in the footer - contact form */
+.btn-submit {
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 24px;
+    padding: 12px 20px;
+    z-index: 1;
+    position: relative;
+    border: none;
+  text-transform: uppercase;
+    background: #5cb85c;
+  transition: 0.3s;
+}
+
+.btn-submit:hover {
+  background: #329532;
+  color: #fff;
+}
 
 /* Contact Form */
 
 #contact {
   padding: 40px 0;
+  background: #f8f8f8;
 }
 
-.contact-form {
-
+#contact h3 {
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .contact-form label {
@@ -3384,16 +3606,20 @@ ul.chat-available-user li a:hover {
 }
 
 .contact-form .form-send button  {
-  background: #4ECDC4;
+  background: #5cb85c;
   border: 0;
-  padding: 10px 30px;
+  padding: 12px 20px;
   color: #fff;
   transition: 0.4s;
   cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+  font-size: 14px;
+  margin-top: 15px;
 }
 
 .contact-form .form-send button:hover {
-  background: #2cb5ab;
+  background: #329532;
 }
 
 .contact-form .validate {
@@ -3411,6 +3637,42 @@ ul.chat-available-user li a:hover {
   text-align: center;
   padding: 15px;
   margin: 15px 0;
+}
+
+.contact-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 .contact-form .error-message {
@@ -3447,5 +3709,9 @@ ul.chat-available-user li a:hover {
 }
 
 #copyrights a {
-  color: #fff;
+  color: #5cb85c;
+}
+
+.credits {
+  color: #999;
 }
