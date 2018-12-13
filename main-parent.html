@@ -117,14 +117,17 @@
              <div class="col-lg-4 col-md-4 col-sm-4 mb">
                 <div class="steps pn">
                   <input id="op1" name="op1" type="checkbox">
-                  <label for="op1">dekdok1</label>
+                  <label for="op1">dekdok1 
+                    <span class="label label-success label-mini">  Normal</span> 
+                  </label>
                   <input id="op2" name="op2" type="checkbox">
-                  <label for="op2">dekdok2</label>
+                  <label for="op2">dekdok2 <span class="label label-success label-mini">  Normal</span> </label>
                   <input id="op3" name="op3" type="checkbox">
-                  <label for="op3">dekdok3</label>
+                  <label for="op3">dekdok3 <span class="label label-success label-mini">  Normal</span> </label>
                   <input type="submit" value="เลือกเด็ก" id="submit1">
                   <!-- add kids -->
                   <i class="fa fa-plus" data-toggle="modal" href="main-parent.html#myModal" style="margin-top: 20px; text-align:center;width:6%;"></i>
+              </div>
             </div>
                   <!-- pop-up -->
                   <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
@@ -149,40 +152,52 @@
                       </div>
                     </div>
                   </div>
-
-
-<div class="row mt form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Login</h1>
-
-    <label for="email"><b>Email</b></label>
-    <input type="text" placeholder="Enter Email" name="email" required>
-
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
-
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
-                    </form>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="grey-panel pn ">
+                  <div class="grey-header">
+                    <h4>Kid Status</h4></div>
+                  <div class="row">
+                    <div class="col-sm-6 col-xs-6 centerrd">
+                    <span class="label label-success label-mini">Normal</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="grey-panel pn ">
+                  <div class="grey-header">
+                    <h4>Car Status</h4></div>
+                  <div class="row">
+                    <div class="col-sm-6 col-xs-6 centerrd">
+                    <span class="label label-success label-mini">Normal</span>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="weather-3 pn centered" style="background: #5cb75d;">
+                  <i class="fa fa-check"></i>
+                  <h1>normal</h1>
+                  <div class="info">
+                    <div class="row">
+                      <h3 class="centered">MADRID</h3>
+                      <div class="col-sm-6 col-xs-6 pull-left">
+                        <p class="goleft"><i class="fa fa-tint"></i> 13%</p>
+                      </div>
+                      <div class="col-sm-6 col-xs-6 pull-right">
+                        <p class="goright"><i class="fa fa-flag"></i> 15 MPH</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
                 </div>
               </div>
-            <!-- /row - FIRST ROW OF PANELS -->
-            <!-- Google map start -->
-<!--           <div class="row mt">
-          <div class="col-sm-12">
-            <section class="panel">
-              <header class="panel-heading">
-                Google Map with Loaction List
-              </header>
-              <div class="panel-body">
-                <div id="gmap-list"></div>
-              </div>
-            </section>
-          </div>
-          </div> -->
-        </div>
+            </div>
+      </div>
+    </div>
+  </div>
       </section>
 
       <!-- /wrapper -->
