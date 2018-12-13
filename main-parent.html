@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>Vkids - Main Page for Admin</title>
+  <title>Vkids</title>
 
   <!-- Favicons -->
   <link href="img/vkids-logo.png" rel="icon">
@@ -32,16 +32,10 @@
 
 <body>
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
     <!--header start-->
     <header class="header black-bg">
-      <div class="sidebar-toggle-box">
-        <div class="fa fa-bars tooltips" data-placement="right" ></div>
-      </div>
       <!--logo start-->
-      <a href="main-admin.html" class="logo"><b>KMUTT</b></a>
+      <a href="main-parent.html" class="logo"><b>KMUTT</b></a>
       <!--logo end-->
       <div class="nav notify-row" id="top_menu">
         <!--  notification start -->
@@ -103,6 +97,7 @@
       </div>
       <div class="top-menu">
         <ul class="nav pull-right top-menu">
+          <li><a href="profile_parent.html" style="margin-top: 15px;padding-top: 0px;padding-right: 0px;padding-left: 0px;padding-bottom: 0px;"><img src="img/ny.jpg" class="img-circle" width="25"></a></li>
           <li><a class="lauange" href="main-admin.html#" style="margin-top: 15px;">TH</a></li>
           <li><a class="lauange" href="main-admin.html#" style="margin-top: 15px;">EN</a></li>
           <li><a class="logout" href="login.html">Logout</a></li>
@@ -110,129 +105,72 @@
       </div>
     </header>
     <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
-    <aside>
-      <div id="sidebar" class="nav-collapse ">
-        <!-- sidebar menu start-->
-        <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="img/user.png" class="img-circle" width="80"></a></p>
-          <h5 class="centered">ADMIN</h5>
-          <li class="mt">
-            <a href="main-admin.html">
-              <i class="fa fa-desktop"></i>
-              <span>หน้าหลัก</span>
-              </a>
-          </li>
-          <li class="sub-menu">
-              <a href="Kids_Data.html">
-              <i class="fa fa-child"></i>
-              ข้อมูลเด็ก</a>
-              </a>
-          </li>
-          <li class="sub-menu">
-              <a href="Car_Data.html">
-              <i class="fa fa-dashboard"></i>
-              ข้อมูลรถ</a>
-              </a>
-          </li>
-          <li class="sub-menu">
-              <a href="Stat_Data.html">
-              <i class=" fa fa-bar-chart-o"></i>
-              <span>ข้อมูลทางสถิติ</span>
-              </a>
-        <!-- sidebar menu end-->
-      </div>
-    </aside>
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
     <!--main content start-->
-    <section id="main-content">
+
+    <section id="main-content" style="margin-left: 0px;">
       <section class="wrapper site-min-height">
         <div class="row mt">
           <div class="col-lg-12">
             <!-- CHART PANELS -->
             <div class="row">
               <!-- /col-md-4-->
-
-              <div class="col-lg-4 col-md-4 col-sm-4 mb">
+             <div class="col-lg-4 col-md-4 col-sm-4 mb">
                 <div class="steps pn">
-                  <input id="op1" name="op1" type="checkbox" checked="">
+                  <input id="op1" name="op1" type="checkbox">
                   <label for="op1">dekdok1</label>
                   <input id="op2" name="op2" type="checkbox">
                   <label for="op2">dekdok2</label>
                   <input id="op3" name="op3" type="checkbox">
                   <label for="op3">dekdok3</label>
-                  <input type="submit" value="All Done!" id="submit">
-                </div>
-              </div>
-              <div class="col-md-4 col-sm-4 mb">
-                <a href="Car_Data.html">
-                <div class="grey-panel pn donut-chart">
-                  <div class="grey-header">
-                    <h4>จำนวนรถที่ใช้งาน</h>
-                  </div>
-                  <canvas id="serverstatus03" height="120" width="120"></canvas>
-                  <script>
-                    var doughnutData = [{
-                        value: 1,
-                        color: "#FF6B6B"
-                      },
-                      {
-                        value: 1,
-                        color: "#fdfdfd"
-                      }
-                    ];
-                    var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-                  <div class="row">
-                    <div class="col-sm-6 col-xs-6 goleft">
-                      <p><br/>จาก 2 คัน</p>
-                    </div>
-                    <div class="col-sm-6 col-xs-6">
-                      <h2>ใช้ 1 คัน</h2>
-                    </div>
-                  </div>
-                </div>
-              </a>
-              </div>
-              <div class="col-md-4 col-sm-4 mb">
-                <a href="Kids_Data.html">
-                <div class="grey-panel pn donut-chart">
-                  <div class="grey-header">
-                    <h4>จำนวนเด็กในรถ</h4>
-                  </div>
-                  <canvas id="serverstatus01" height="120" width="120"></canvas>
-                  <script>
-                    var doughnutData = [{
-                        value: 7,
-                        color: "#FF6B6B"
-                      },
-                      {
-                        value: 8,
-                        color: "#fdfdfd"
-                      }
-                    ];
-                    var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
-                  </script>
-                  <div class="row">
-                    <div class="col-sm-6 col-xs-6 goleft">
-                      <p>เหลือ<br/>จาก 15 คน</p>
-                    </div>
-                    <div class="col-sm-6 col-xs-6">
-                      <h2>8 คน</h2>
-                    </div>
-                  </div>
-                </div>
-              </a>
+                  <input type="submit" value="เลือกเด็ก" id="submit1">
+                  <!-- add kids -->
+                  <i class="fa fa-plus" data-toggle="modal" href="main-parent.html#myModal" style="margin-top: 20px; text-align:center;width:6%;"></i>
             </div>
+                  <!-- pop-up -->
+                  <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="pull-middle modal-title">เพิ่มเด็ก</h4>
+                        </div>
+                      <div class="modal-body" style="height:130px;">
+                        <div class="form-group">
+                          <label class="col-sm-2 col-sm-2 control-label">Code</label>
+                          <div class="col-sm-10">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                    <div class="modal-footer">
+                      <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                      <button class="btn btn-theme" type="button">Submit</button>
+                    </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+<div class="row mt form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+                    </form>
+                </div>
+              </div>
             <!-- /row - FIRST ROW OF PANELS -->
             <!-- Google map start -->
-          <div class="row mt">
+<!--           <div class="row mt">
           <div class="col-sm-12">
             <section class="panel">
               <header class="panel-heading">
@@ -243,11 +181,10 @@
               </div>
             </section>
           </div>
-            <!-- /Google map -->
-          </div>
+          </div> -->
         </div>
       </section>
-</div>
+
       <!-- /wrapper -->
     </section>
     <!-- /MAIN CONTENT -->
@@ -319,6 +256,15 @@ function myFunction() {
 }
 </script>
 
+<script>
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
 </body>
 
 </html>
