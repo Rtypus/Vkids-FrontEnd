@@ -32,10 +32,7 @@
 
 <body>
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-    <!--header start-->
+
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right" ></div>
@@ -109,11 +106,7 @@
         </ul>
       </div>
     </header>
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
+
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
@@ -146,11 +139,7 @@
         <!-- sidebar menu end-->
       </div>
     </aside>
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
+
     <section id="main-content">
       <section class="wrapper site-min-height">
         <div class="row mt">
@@ -158,50 +147,36 @@
             <!-- CHART PANELS -->
             <div class="row">
               <!-- /col-md-4-->
-              <div class="col-md-4 col-sm-4 mb">
-                <a href="van1.html">
-                <div>
-                  <center>
-                  <h1 class="mt"><i class="fa fa-bus fa-4x"></i></h1>
-                  <div >
-                    <h1>รถทุกคัน</h1>
-                  </div>
-                  <!-- <footer>
-                    <div class="centered">
-                      <h4><i class="fa fa-trophy"></i>รถทุกคัน</h4>
-                    </div>
-                  </footer> -->
-                </center>
-                </div>
-              </a>
-                <!--  /darkblue panel -->
+             <div class="col-md-4 mb">
+                <div class="stepsss pn" style="background-color: #444c57;">
+                  <label for="op1">Van1 
+                    <span class="label label-mini" style="background: #5cb75d;">  Normal</span> 
+                  </label>
+                  <label for="op2">Van2 <span class="label label-mini" style="background: #ffcf00;">  Unusual</span> </label>
+                  <label for="op3">Van3 <span class="label label-mini" style="background: #797979;">  Parking</span> </label>
               </div>
-              <!-- /col-md-4 -->
+            </div>
               <div class="col-md-4 col-sm-4 mb">
-                <a href="Car_Data.html">
-                <div class="grey-panel pn donut-chart">
-                  <div class="grey-header">
-                    <h4>จำนวนรถที่ใช้งาน</h>
+                  <div class="weather-3 pn centered" style="background: #5cb75d;">
+                  <i class="fa fa-check"></i>
+                  <h1>ON CAR</h1>
+                  <div class="info">
+                    <div class="row">
+                      <h3 class="centered"><i class="fa fa-bus " style="font-size: 20px;"></i>  A1</h3>
+                      <div class="col-sm-6 col-xs-6 pull-right">
+                        <p class="goright"><i class="fa fa-dashboard"></i> 15 km/hr</p>
+                      </div>
+                    </div>
                   </div>
-                  <canvas id="serverstatus03" height="120" width="120"></canvas>
-                  <script>
-                    var doughnutData = [{
-                        value: 1,
-                        color: "#f17241"
-                      },
-                      {
-                        value: 1,
-                        color: "#fdfdfd"
-                      }
-                    ];
-                    var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData);
-                  </script>
+                  </div>
+
+
                   <div class="row">
                     <div class="col-sm-6 col-xs-6 goleft">
-                      <p><br/>จาก 2 คัน</p>
+                      <h3 style="margin-left: 20px;">ใช้ 1 คัน</h3>
                     </div>
                     <div class="col-sm-6 col-xs-6">
-                      <h2>ใช้ 1 คัน</h2>
+                      <p><br/>จาก 2 คัน</p>
                     </div>
                   </div>
                 </div>
