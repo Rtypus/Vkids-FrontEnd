@@ -1182,6 +1182,7 @@ PANELS CONFIGURATIONS
 	margin-top: 0px;
 	font-weight: lighter;
 }
+
 .weather-2 .data h1{
 	margin-top: 2px;
 }
@@ -1211,7 +1212,9 @@ PANELS CONFIGURATIONS
 	margin-top: 10px;
 }
 .weather-3 .info h3 {
+    margin-top: 10px;
 	font-weight: 900;
+    color: white;
 	margin-bottom: 0px;
 }
 .weather-3 .info p {
@@ -1222,6 +1225,7 @@ PANELS CONFIGURATIONS
 	font-size: 15px;
 	font-weight: 700;
 }
+
 
 
 /* Message Panel */
@@ -1530,6 +1534,9 @@ PANELS CONFIGURATIONS
 .steps input[type=submit]:hover{
   background: #2f323a;
 }
+.step .steps-header{
+    min-height: 250px;
+}
 .steps label{
   background: #ddd;
   height: 65px;
@@ -1608,11 +1615,11 @@ PANELS CONFIGURATIONS
 /* PROFILE PANELS */
 /* Profile 01*/
 #profile-01 {
-	background: url(../img/profile-01.jpg) no-repeat center top;
+	/*background: url(../img/profile-01.jpg) no-repeat center top;*/
 	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 150px;
+	min-height: 75px;
 	width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -1624,28 +1631,35 @@ PANELS CONFIGURATIONS
     background-size: cover;
 }
 #profile-01 h3 {
-	color: white;
-	padding-top: 50px;
+	color: #777777;
+	padding-top: 25px;
 	margin: 0px;
 	text-align: center;
 }
+#profile-01 h1 {
+    color: #777777;
+    padding-top: 25px;
+    margin: 0px;
+    text-align: center;
+    font-size: 39px
+}
 #profile-01 h6 {
-	color: white;
+	color: #777777;
 	text-align: center;
 	margin-bottom: 0px;
 	font-weight: 900;
 }
 .profile-01 {
 	background: #4ECDC4;
-	height: 50px;
+	height: 150px;
 }
 .profile-01:hover {
-	background: #2f2f2f;
+/*	background: #2f2f2f;*/
   -webkit-transition: background-color 0.6s;
   -moz-transition: background-color 0.6s;
   -o-transition: background-color 0.6s;
   transition: background-color 0.6s;
-  cursor: pointer;
+/*  cursor: pointer;*/
 }
 .profile-01 p {
 	color: white;
