@@ -1214,14 +1214,14 @@ PANELS CONFIGURATIONS
 .weather-3 .info h3 {
     margin-top: 10px;
 	font-weight: 900;
-    color: white;
+    color: #c1c2c2;
 	margin-bottom: 0px;
 }
 .weather-3 .info p {
 	margin-left: 10px;
 	margin-right: 10px;
 	margin-bottom: 16px;
-	color: #c2c2c2;
+	color: #c1c2c2;
 	font-size: 15px;
 	font-weight: 700;
 }
@@ -1534,9 +1534,7 @@ PANELS CONFIGURATIONS
 .steps input[type=submit]:hover{
   background: #2f323a;
 }
-.step .steps-header{
-    min-height: 250px;
-}
+
 .steps label{
   background: #ddd;
   height: 65px;
@@ -1607,7 +1605,7 @@ PANELS CONFIGURATIONS
     font-weight: 200;
     margin-top: 10px;
     text-align: center;
-    color: #d4d4d4;
+    color: white;
 }
 
 
@@ -1616,7 +1614,6 @@ PANELS CONFIGURATIONS
 /* Profile 01*/
 #profile-01 {
 	/*background: url(../img/profile-01.jpg) no-repeat center top;*/
-	margin-top: -15px;
 	background-attachment: relative;
 	background-position: center center;
 	min-height: 75px;
